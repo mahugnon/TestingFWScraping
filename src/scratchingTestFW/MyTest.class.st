@@ -8,21 +8,21 @@ Class {
 MyTest >> SecondTest [
 	| a |
 	a := 1.
-	 a:=a+ 1.
-	^ self assertEdelta: 2 and: a
+	a := a+ 1.
+	^ self assertDelta: 2 and: a
 ]
 
 { #category : #accessing }
 MyTest >> firstTest [
 	| a |
-	a:= 1.
-	^self assertEdelta: 1 and: a
+	a := 1.
+	^ self assertDelta: 1 and: a
 ]
 
 { #category : #accessing }
 MyTest >> thirdTest [
+
 	| a |
 	a := 1.
-	
-	^ self assertEdelta: a and: 1
+	^ self assertDelta: a and: 1
 ]
